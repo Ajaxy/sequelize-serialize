@@ -1,0 +1,43 @@
+{
+  "name": "sequelize-serialize",
+  "version": "1.0.0",
+  "description": "Automatic JSON serialization of Sequelize models and collections based on JSON Schema",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "precommit": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajaxy/sequelize-serialize.git"
+  },
+  "keywords": [
+    "sequelize",
+    "serialization",
+    "json",
+    "schema",
+    "api",
+    "rest",
+    "openapi",
+    "swagger",
+    "tinyspec",
+    "specification",
+    "documentation"
+  ],
+  "author": "Alexander Zinchuk (alexander@zinchuk.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ajaxy/sequelize-serialize/issues"
+  },
+  "homepage": "https://github.com/Ajaxy/sequelize-serialize#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {}
+}

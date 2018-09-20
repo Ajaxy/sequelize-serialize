@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": ["error", 120],
+    "no-param-reassign": 0,
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": false
+      }
+    ]
+  },
+  "env": {
+    "jest": true
+  }
+}
