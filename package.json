@@ -1,6 +1,6 @@
 {
   "name": "sequelize-serialize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automatic JSON serialization of Sequelize models and collections based on JSON Schema",
   "main": "lib/index.js",
   "scripts": {
