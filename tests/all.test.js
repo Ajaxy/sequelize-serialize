@@ -91,4 +91,48 @@ describe('Serializers', () => {
     expect(serialize(instanceA, schema))
       .toEqual({ a: 'x', modelsB: [{ b: 777, c: true }, { b: 777, c: true }] });
   });
+
+  it('Serialize optional arrays with schema', () => {
+    const ModelA = createModel();
+    const ModelB = createModel();
+    ModelA.hasMany(ModelB);
+
+    const schema = {
+      type: 'object',
+      properties: {
+        a: {
+          type: 'string',
+        },
+        modelsB: {
+          anyOf: [
+            {
+              type: 'array',
+              items: {
+                type: 'object',
+                properties: {
+                  b: {
+                    type: 'integer',
+                  },
+                  c: {
+                    type: 'boolean',
+                  },
+                },
+              },
+            },
+            {
+              type: 'null',
+            },
+          ],
+        },
+      },
+    };
+
+    const instanceA = new ModelA(DUMMY_VALUES);
+    const instanceB1 = new ModelB(DUMMY_VALUES);
+    const instanceB2 = new ModelB(DUMMY_VALUES);
+    instanceA.modelsB = [instanceB1, instanceB2];
+
+    expect(serialize(instanceA, schema))
+      .toEqual({ a: 'x', modelsB: [{ b: 777, c: true }, { b: 777, c: true }] });
+  });
 });
