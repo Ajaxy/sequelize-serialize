@@ -36,7 +36,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.6.0",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.15.1",
     "sqlite3": "^4.0.6"
   },
   "directories": {
