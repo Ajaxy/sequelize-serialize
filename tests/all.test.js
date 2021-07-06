@@ -92,7 +92,7 @@ describe('Serializers', () => {
       .toEqual({ a: 'x', modelsB: [{ b: 777, c: true }, { b: 777, c: true }] });
   });
 
-  it('Serialize object with empry properties', () => {
+  it('Serialize schema with empry properties', () => {
     const schema = {
       type: 'object',
     };
