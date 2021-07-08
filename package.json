@@ -32,12 +32,12 @@
   },
   "homepage": "https://github.com/Ajaxy/sequelize-serialize#readme",
   "devDependencies": {
-    "eslint": "^5.4.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "jest": "^23.6.0",
-    "sequelize": "^5.15.1",
-    "sqlite3": "^4.0.6"
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.6",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2"
   },
   "directories": {
     "lib": "lib",
