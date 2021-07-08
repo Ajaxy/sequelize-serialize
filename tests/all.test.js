@@ -91,4 +91,16 @@ describe('Serializers', () => {
     expect(serialize(instanceA, schema))
       .toEqual({ a: 'x', modelsB: [{ b: 777, c: true }, { b: 777, c: true }] });
   });
+
+  it('Serialize schema with empry properties', () => {
+    const schema = {
+      type: 'object',
+    };
+    const row = {
+      some_field: 1,
+    };
+    const data = [row];
+    const result = serialize(data, schema);
+    expect(result[0]).toEqual(row);
+  });
 });
